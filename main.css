@@ -1,0 +1,152 @@
+
+.qizil{
+    width: 80px;
+    height: 80px;
+    position: absolute
+}
+
+.sariq{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.yashil{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.kok{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.qizil:nth-child(1) { 
+    background-color: red;
+    top: 0;
+    left: 0;
+    animation-name: qizil;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.sariq:nth-child(2) {
+    background-color: yellow;
+    bottom: 0;
+    left: 0;
+    animation-name: sariq;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.yashil:nth-child(3) { 
+    background-color: green;
+    top: 0;
+    right: 0;
+    animation-name: yashil;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.kok:nth-child(4) {
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+    animation-name: kok;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes qizil{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: calc(100% - 80px);
+    }
+    50%{
+        top: calc(100% - 80px);
+        left: calc(100% - 80px);
+    }
+    75%{
+        top: calc(100% - 80px);
+        left: 0;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+@keyframes yashil{
+    0%{
+        top: 0;
+        right: 0;
+    }
+    25%{
+        right: 0;
+        top: calc(100% - 80px);
+    }
+    50%{
+        top: calc(100% - 80px);
+        right: calc(100% - 80px);
+    }
+    75%{
+        right: calc(100% - 80px);
+        top: 0;
+    }
+    100%{
+        top: 0;
+        right: 0;
+    }
+}
+@keyframes sariq{
+    0%{
+        bottom: 0;
+        left: 0;
+    }
+    25%{
+        left: 0;
+        bottom: calc(100% - 80px);
+    }
+    50%{
+        bottom: calc(100% - 80px);
+        left: calc(100% - 80px);
+    }
+    75%{
+        left: calc(100% - 80px);
+        bottom: 0;
+    }
+    100%{
+        bottom: 0;
+        left: 0;
+    }
+}
+@keyframes kok{
+    0%{
+        bottom: 0;
+        right: 0;
+    }
+    25%{
+        bottom: 0;
+        right: calc(100% - 80px);
+    }
+    50%{
+        bottom: calc(100% - 80px);
+        right: calc(100% - 80px);
+    }
+    75%{
+        bottom: calc(100% - 80px);
+        right: 0;
+    }
+    100%{
+        bottom: 0;
+right: 0;    }
+}
